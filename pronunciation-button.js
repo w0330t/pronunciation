@@ -21,13 +21,15 @@ class PronunciationButtonWidget extends Widget {
         transformButton.title = transformButton.ariaLabel = 'Pronunciation';
         parent.insertBefore(transformButton, nextSibling);
         this.domNodes.push(transformButton);
+        const title = this.getAttribute('title');
+        this.audio = new Audio('https://dict.youdao.com/dictvoice?audio=' + title + '&type=2');
+        this.audio.play();
     }
     /**
      * Event listener of button
      */
     async onExecuteButtonClick() {
-        const title = this.getAttribute('title');
-        alert(title)
+        this.audio.play();
     }
 }
 exports['pronunciation-button'] = PronunciationButtonWidget;

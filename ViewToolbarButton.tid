@@ -8,7 +8,7 @@ description: Word pronunciation
 
 \whitespace trim
 <$let title={{!!title}} type={{!!type}}>
-<$list filter="[all[current]tag[单词]]]">
+<$list filter="[all[current]tag[单词]]">
 <$pronunciation-button title=<<title>> type=<<type>> />
 </$list>
 </$let>
