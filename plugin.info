@@ -1,0 +1,9 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/w0330t/pronunciation",
+    "plugin-type": "plugin",
+    "name": "pronunciation",
+    "description": "word pronunciation",
+    "author": "w0330t"
+}

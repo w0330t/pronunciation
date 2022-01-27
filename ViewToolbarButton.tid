@@ -1,0 +1,14 @@
+tags: $:/tags/ViewToolbar
+title: $:/plugins/w0330t/pronunciation/ViewToolbarButton
+list-before: $:/core/ui/Buttons/close
+type: text/vnd.tiddlywiki
+caption: {{$:/plugins/w0330t/pronunciation/icon}}} {{$:/plugins/w0330t/pronunciation/icon-caption}}
+short-caption: pronunciation
+description: Word pronunciation
+
+\whitespace trim
+<$let title={{!!title}} type={{!!type}}>
+<$list filter="[all[current]tag[单词]]]">
+<$pronunciation-button title=<<title>> type=<<type>> />
+</$list>
+</$let>
